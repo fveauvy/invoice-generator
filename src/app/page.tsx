@@ -80,3 +80,5 @@ async function CrudShowcase() {
     </div>
   );
 }
+
+export const dynamic = "force-dynamic";
