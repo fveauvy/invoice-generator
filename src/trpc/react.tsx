@@ -7,7 +7,7 @@ import { useState } from "react";
 
 import { type AppRouter } from "@/server/api/root";
 import { getUrl, transformer } from "./shared";
-import { env } from "@/env.mjs";
+
 export const api = createTRPCReact<AppRouter>();
 
 export function TRPCReactProvider(props: {
@@ -22,7 +22,7 @@ export function TRPCReactProvider(props: {
       links: [
         loggerLink({
           enabled: (op) =>
-            env.APP_ENV === "development" ||
+            process.env.APP_ENV === "development" ||
             (op.direction === "down" && op.result instanceof Error),
         }),
         unstable_httpBatchStreamLink({
