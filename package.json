@@ -6,7 +6,7 @@
     "build": "next build",
     "db:push": "dotenv drizzle-kit push:mysql",
     "db:studio": "dotenv drizzle-kit studio",
-    "dev": "next dev --turbo --port 9000",
+    "dev": "next dev --port 9000",
     "lint": "next lint",
     "start": "next start"
   },
@@ -24,7 +24,7 @@
     "clsx": "^2.0.0",
     "drizzle-orm": "^0.28.5",
     "lucide-react": "^0.291.0",
-    "next": "^14.0.1",
+    "next": "^13.5.4",
     "next-auth": "^4.23.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
