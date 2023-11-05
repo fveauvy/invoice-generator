@@ -32,6 +32,8 @@ jobs:
           bun-version: latest
       - name: Install Dependencies
         run: bun install
+      - name: Environment Variables
+        run: cp .env.example .env
       - name: Lint
         run: bun lint
       - name: Format
